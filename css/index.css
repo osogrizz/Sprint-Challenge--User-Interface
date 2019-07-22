@@ -196,3 +196,33 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+/* About page only styles */
+
+.about-main {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+article {
+    margin: 20px 0; 
+    width: 50%;
+}
+
+.about-title {
+    margin: 10px 0;
+}
+
+button {
+    margin: 20px;
+    width: 120px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.about-bottom-article {
+    margin: 40px 0;
+}
