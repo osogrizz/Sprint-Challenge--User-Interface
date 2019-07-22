@@ -297,6 +297,12 @@ textarea {
     .bottom-content .text-container {
         margin: 20px 0;
     }
+
+    .middle-content .boxes .box {
+        width: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 599px) {
