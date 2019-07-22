@@ -183,7 +183,8 @@ footer {
 }
 
 footer nav {
-    /* margin: 0 auto; */
+    /* centers footer nav */
+    margin: 0 auto; 
     display: flex;
     width: 60%;
     justify-content: space-between;
@@ -221,6 +222,7 @@ article {
 }
 
 button {
+    outline: none;
     margin: 20px;
     width: 120px;
     border: 2px solid black;
@@ -229,6 +231,46 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    transition: font-weight 0.2s, letter-spacing 0.2s ease-in-out;
+}
+
+button:active {
+    background: red;
+}
+
 .about-bottom-article {
     margin: 40px 0;
+}
+
+/* contact page */
+
+.contact-title {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+form {
+    margin: 80px auto;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 10px;
+    width: 308px;
+}
+
+textarea {
+    padding: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 10px;
+  width: 80%;
 }
