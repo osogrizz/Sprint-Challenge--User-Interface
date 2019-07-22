@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -84,10 +84,11 @@ nav a {
 
 nav a:hover {
     color: red;
+    transition: all 0.2s ease-in-out;
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -273,4 +274,41 @@ textarea {
   text-transform: capitalize;
   margin: 10px;
   width: 80%;
+}
+
+/* media queries */
+
+@media (max-width: 799px ) {
+
+    header nav img {
+        width: 80px;
+    }
+
+    .container {
+        margin:  0 10px;
+    }
+    img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        display: block;
+    }
+    .bottom-content .text-container {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .top-content {
+        display: block;
+    }
+
+    .top-content .text-container {
+        margin: 20px 0;
+    }
+
+    .top-content .text-container p {
+        width: 80vw;
+    }
 }
