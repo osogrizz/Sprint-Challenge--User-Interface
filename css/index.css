@@ -66,6 +66,22 @@ p {
     line-height: 1.4;
 }
 
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 30px 0 40px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
