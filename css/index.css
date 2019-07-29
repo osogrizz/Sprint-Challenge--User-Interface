@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -66,8 +66,29 @@ p {
     line-height: 1.4;
 }
 
+header {
+    padding-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 30px 0 40px;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+    transition: all 0.2s ease-in-out;
+}
+
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -101,6 +122,37 @@ p {
     justify-content: space-evenly;
 }
 
+.middle-content .boxes .box:nth-child(1){
+    background: teal;
+}
+.middle-content .boxes .box:nth-child(2){
+    background: gold;
+}
+.middle-content .boxes .box:nth-child(3){
+    background: cadetblue;
+}
+.middle-content .boxes .box:nth-child(4){
+    background: coral;
+}
+.middle-content .boxes .box:nth-child(5){
+    background: crimson;
+}
+.middle-content .boxes .box:nth-child(6){
+    background: forestgreen;
+}
+.middle-content .boxes .box:nth-child(7){
+    background: darkorchid;
+}
+.middle-content .boxes .box:nth-child(8){
+    background: hotpink;
+}
+.middle-content .boxes .box:nth-child(9){
+    background: indigo;
+}
+.middle-content .boxes .box:nth-child(10){
+    background: dodgerblue;
+}
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -132,8 +184,10 @@ footer {
 }
 
 footer nav {
-    width: 60%;
+    /* centers footer nav */
+    margin: 0 auto; 
     display: flex;
+    width: 60%;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
@@ -143,4 +197,124 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+/* About page only styles */
+
+.top-about-section {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-main {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+article {
+    margin: 20px 8px; 
+    width: 46%;
+    border-bottom: 1px dashed black; 
+}
+
+.about-title {
+    margin: 10px 0;
+}
+
+button {
+    outline: none;
+    margin: 20px;
+    width: 120px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: white;
+    background: black;
+    letter-spacing: 2px;
+    transition: font-weight 0.2s, letter-spacing 0.2s ease-in-out;
+}
+
+button:active {
+    background: red;
+}
+
+.about-bottom-article {
+    margin: 40px 0;
+}
+
+/* contact page */
+
+.contact-title {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+form {
+    margin: 80px auto;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 10px;
+    width: 308px;
+}
+
+textarea {
+    padding: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 10px;
+  width: 80%;
+}
+
+/* media queries */
+
+@media (max-width: 799px ) {
+
+    header nav img {
+        width: 80px;
+    }
+
+    .container {
+        margin:  0 10px;
+    }
+    img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        display: block;
+    }
+    .bottom-content .text-container {
+        margin: 20px 0;
+    }
+
+    .middle-content .boxes .box {
+        width: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 599px) {
+    .top-content {
+        display: block;
+    }
+
+    .top-content .text-container {
+        margin: 20px 0;
+    }
+
+    .top-content .text-container p {
+        width: 80vw;
+    }
 }
